@@ -16,3 +16,5 @@ chroma_db/
 
 scope.md
 .env
+retrieval.py
+app_archived.py
