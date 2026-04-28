@@ -118,11 +118,11 @@ class HybridRetriever:
                     })
 
 
-            # Filtering only for latest documents:
-            bm25_hits_new = []
-            for hit in bm25_hits:
-                if hit['metadata']['Is Latest'] == "Yes":
-                    bm25_hits_new.append(hit)
+        # Filtering only for latest documents:
+        bm25_hits_new = []
+        for hit in bm25_hits:
+            if hit['metadata']['Is Latest'] == "Yes":
+                bm25_hits_new.append(hit)
 
 
         combined = self.merge_results(vector_hits,bm25_hits_new)

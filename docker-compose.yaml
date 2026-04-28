@@ -6,6 +6,7 @@ services:
     volumes:
       - hr_data:/app/data
       - hr_chroma:/app/chroma_db
+      - hr_model_cache:/root/.cache/huggingface
     env_file:
       - .env
     environment:
@@ -34,3 +35,4 @@ services:
 volumes:
   hr_data:
   hr_chroma:
+  hr_model_cache:
