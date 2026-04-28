@@ -1,0 +1,36 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - hr_data:/app/data
+      - hr_chroma:/app/chroma_db
+    env_file:
+      - .env
+    environment:
+      - ENVIRONMENT=production
+    restart: unless-stopped
+    command: uvicorn src.main:app --host 0.0.0.0 --port 8000
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 120s
+
+  ui:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - API_BASE=http://api:8000
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+    command: streamlit run src/ui/app.py --server.port 8501 --server.address 0.0.0.0
+
+volumes:
+  hr_data:
+  hr_chroma:

@@ -1,0 +1,34 @@
+id,question,RAG answer,Expected Answer,faithfulness,answer_relevancy,context_precision,context_recall
+AML-01,Under what three conditions is a client classified as High-Risk under the AML policy?,"- The client is a Politically Exposed Person (PEP).
+- The source of wealth originates from a jurisdiction on the FATF watchlist.
+- The client operates in a cash-intensive business sector (e.g., currency exchange).","A client is classified as High-Risk if they are a Politically Exposed Person (PEP), their source of wealth originates from a jurisdiction on the FATF watchlist, or they operate in a cash-intensive business sector such as currency exchange.",1,0.441441603,0.5,1
+AML-02,"Who must employees report suspicious activity to, and what form must be used?","- Employees must report suspicious activity to the designated Money Laundering Reporting Officer (MLRO).
+- The form that must be used is Form SAR-INT-1.",All employees must report suspicious activity to the designated Money Laundering Reporting Officer (MLRO) using Form SAR-INT-1.,1,0.790722962,1,1
+AML-03,How does the firm classify Low-Risk clients under the AML policy?,#NAME?,"Low-Risk clients are publicly traded, regulated entities in FATF-approved jurisdictions.",1,0.73580998,1,1
+ONB-01,What forms are required for Enhanced Due Diligence (EDD) when onboarding a High-Risk customer?,"- IDV-50 form is required
+- SOW-300 form is required
+- 3 external references are needed","EDD requires the ID Verification Form (IDV-50), the Source of Wealth Declaration Form (SOW-300), and a minimum of three external references.",1,0.420467642,1,1
+ONB-02,How long must EDD documents be retained after a client relationship ends?,- EDD documents must be retained for ten (10) years after the client relationship is terminated.,All EDD documents must be retained for ten (10) years after the client relationship is terminated.,1,0.978013176,1,1
+ONB-03,What documentation is needed for Low or Medium Risk customer onboarding?,"- Requires only standard government-issued photo ID
+- Basic KYC Form (KYC-100)",Low and Medium Risk customers require only a standard government-issued photo ID and the basic KYC Form (KYC-100).,1,0.494195488,1,1
+INC-01,What must an employee do immediately upon identifying a suspected data breach?,"- Immediately notify Tier 1 help desk.
+- Complete initial report INC-RPT-1.",The employee must immediately notify the Tier 1 help desk and complete initial report INC-RPT-1.,1,0.527260247,1,1
+INC-02,"Within what timeframe must key contacts be notified for a Level 2 or Level 3 breach, and who are they?","- Key contacts must be notified verbally within one hour for a Level 2 or Level 3 breach.
+- Key contacts include:
+  - Legal Counsel (Primary): Ms. R. Thompson, Ext. 4501; Mobile: 555-888-9999
+  - Executive Director (Primary): Mr. A. Chen, Mobile: 555-777-1111
+  - Data Protection Officer (DPO): J. Patel, Ext. 4503","If the breach involves more than 500 records or classified PII, Legal Counsel (Ms. R. Thompson), the Executive Director (Mr. A. Chen), and the Data Protection Officer (J. Patel) must all be contacted verbally within one hour.",1,0.919588597,1,1
+INC-03,"Within how many days must the IRT issue a final breach report, and who is the recipient?","- The IRT must issue a final report within 30 days of incident closure.
+- The recipient of the final report is the Board of Directors.",The IRT must issue a final report to the Board of Directors within 30 days of incident closure.,1,0.757986521,1,1
+HR-01,How many days of unused PTO can an employee carry over to the next calendar year?,- A maximum of 40 hours (5 days) of unused PTO may be carried over from the current calendar year to the next.,"Under the current active policy (v2), a maximum of 40 hours (5 days) of unused PTO may be carried over. Any unused time over 40 hours is forfeited on January 1st.",1,0.941488517,1,1
+HR-02,How much advance notice must an employee give when requesting PTO?,- Employees must submit PTO requests at least two (2) weeks in advance.,"Under the current active policy (v2), employees must submit PTO requests at least two (2) weeks in advance through the HRIS Portal (Form TMO-100).",1,0.852583056,0.5,1
+HR-03,Is an employee required to use their accrued PTO concurrently with FMLA leave?,#NAME?,"Yes. Under the current active policy (v2), the company requires employees to use any available accrued PTO or sick leave concurrently with FMLA leave, applying the paid leave first until exhaustion. The remainder of the FMLA period will then be unpaid.",1,0.901629189,1,0.666666667
+HR-04,What are the FMLA eligibility criteria for US employees?,"- Have worked for the Company for at least 12 months (not necessarily consecutive).
+- Have completed at least 1,250 hours of service during the 12-month period immediately preceding the start of the leave.
+- Are employed at a worksite where the Company employs at least 50 employees within 75 miles of that worksite.","To be eligible for FMLA leave, a US employee must have worked for the company for at least 12 months, completed at least 1,250 hours of service in the preceding 12-month period, and work at a site where the company employs at least 50 employees within 75 miles.",1,0.590299606,0.833333333,1
+COMP-01,What is the 401(k) company match for a Tier 2 employee (3+ years of service) and what is the annual cap?,"- Company match formula: Dollar-for-dollar (up to 4% of salary)
+- Annual match cap: $6,000 USD","For Tier 2 employees (3+ years of service), the company matches dollar-for-dollar up to 4% of the employee's base salary, with an annual match cap of $6,000 USD.",1,0.696882221,1,1
+COMP-02,When do company 401(k) matching contributions become fully vested?,"- Company matching contributions vest according to a 4-year graded schedule (25% per year).  
+- Full vesting (100%) occurs after four years of continuous employment.",Company matching contributions vest on a 4-year graded schedule at 25% per year. Full vesting (100%) occurs after four years of continuous employment. Employee contributions are immediately 100% vested.,0.75,0.740905087,1,1
+,,,,,,,
+,,,Average ,0.983333333,0.719284926,0.922222222,0.977777778
